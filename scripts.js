@@ -1,13 +1,3 @@
-const wrapper = document.getElementById('wrapper');
-const alturavp = window.innerHeight; 
-wrapper.style.height = `${alturavp- 217}px`;
-window.addEventListener("resize", (e) => {
-    console.log(e.srcElement.innerHeight);
-    console.log(e.srcElement.innerWidth);
-    const container = document.getElementById("wrapper");
-    container.style.height = `${e.srcElement.innerHeight - 217}px`;
-    console.log('aun sigo detectando');
-  });
 const navbarclose=document.getElementById('navbar');
 const navbarOpen=document.getElementById('open');
 const openNavbar=()=> {
@@ -21,6 +11,20 @@ const openNavbar=()=> {
   
 navbarOpen.addEventListener('click',openNavbar);
 navbarclose.addEventListener('click',closeNavbar);
+
+
+
+const wrapper = document.getElementById('wrapper');
+const alturavp = window.innerHeight; 
+wrapper.style.height = `${alturavp- 217}px`;
+window.addEventListener("resize", (e) => {
+    console.log(e.srcElement.innerHeight);
+    console.log(e.srcElement.innerWidth);
+    const container = document.getElementById("wrapper");
+    container.style.height = `${e.srcElement.innerHeight - 217}px`;
+    console.log('aun sigo detectando');
+  });
+
 
 const typed = new Typed(".element", {
   strings: [
