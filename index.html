@@ -4,38 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Menu Hamburguer -->
-    <!-- <div class="toggler">
-      <div class="toggler__line"></div>
-      <div class="toggler__line"></div>
-      <div class="toggler__line"></div>
-    </div> -->
-    <!--------------------->
-    <section class="information">
-      <header class="stripe">
-        <div class="stripe__item">
-          <a href="./index.html">
-            <h1>Jeedx</h1>
-          </a>
+    <header class="stripe">
+      <a class="stripe__item" href="./index.html">
+        <h1>Jeedx</h1>
+      </a>
+      <span class="open" id="open" onclick="openNavbar()">&#9776;</span>
+      <div class="overlay" id="navbar">
+        <div class="overlay__header">
+          <span href="#" onclick="closeNavbar()" class="close position"
+            >&#9776;</span
+          >
         </div>
-        <ul class="stripe__item">
-          <!-- <li class="nav__item" id="nav__item"><a href="./about.html">ABOUT</a></li> -->
-          <li class="nav__item" id="nav__item">
-            <a href="./projects.html">PROJECTS</a>
-          </li>
-          <li class="nav__item" id="nav__item">
-            <a href="./contact.html">CONTACT</a>
-          </li>
-        </ul>
-      </header>
-      <div class="container" id="container">
+        <div class="overlay__content">
+          <a href="./index.html">Home</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+    <main class="wrapper" id="wrapper">
+      <div class="container">
         <div class="container__txt">
           <span class="element"></span>
         </div>
@@ -43,22 +34,19 @@
           <img src="assets/undraw_mello_otq1.svg" alt="" />
         </div>
       </div>
-    </section>
-    <!-- <section class="information2"></section> -->
+    </main>
     <footer class="footer">
       <div class="redes">
-        <div class="redes__item">
-          <a href="https://www.facebook.com/Jeedx/"
-            ><img src="assets/facebook.svg" alt=""
-          /></a>
-        </div>
-        <div class="redes__item">
-          <a
-            href="https://www.youtube.com/channel/UCF7K-yzsEmg0SAW1BPMuVAw/videos?view_as=subscriber"
-            ><img src="assets/youtube.svg" alt=""
-          /></a>
-        </div>
-        <div class="redes__item"><img src="assets/github.svg" alt="" /></div>
+        <a href="https://www.facebook.com/Jeedx/"
+          ><img src="assets/facebook.svg" alt=""
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCF7K-yzsEmg0SAW1BPMuVAw/videos?view_as=subscriber"
+          ><img src="assets/youtube.svg" alt=""
+        /></a>
+        <a href="https://github.com/BryanFloresAvila"
+          ><img src="assets/github.svg" alt=""
+        /></a>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
