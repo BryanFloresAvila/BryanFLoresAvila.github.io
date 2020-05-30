@@ -4,57 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACT</title>
-    
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
-      <header class="stripe">
-        <a class="stripe__item" href="./index.html">
-          <h1>Jeedx</h1>
-        </a>
-        <span class="open" id="open">&#9776;</span>
-        <div class="overlay" id="navbar">
-          <div class="overlay__header">
-            <span class="close position">&#9776;</span>
-          </div>
-          <div class="overlay__content">
-            <a href="./index.html">Home</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./contact.html">Contact</a>
-          </div>
-        </div>
-      </header>
-      <div class="container__contact" id="container">
-        <!-- <div class="title">
-          <h1>Contac me</h1>
-        </div> -->
-        <div class="card">
-          <div class="card__header">
-            
-              <p>Contact Me</p>
-            
-          </div>
-          <div class="card__body">
-            <form action="" class="card__body__form">
-              <input
-                type="text"
-                placeholder="Names"
-                class="form__input"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                class="form__input"
-              />
-              <input type="text" placeholder="Asunt" class="form__input" />
-              <textarea placeholder="Message"" class="form__input"></textarea>
-              <input type="submit" value="Enviar mensaje" class="form__btn" />
-            </form>
-          </div>
+    <header class="stripe">
+      <a class="stripe__item" href="./index.html">
+        <h1>Jeedx</h1>
+      </a>
+
+      <input type="checkbox" id="check" />
+      <label class="toggle" id="toggle" for="check">
+        <line class="toggle__line" id="toggle__line"></line>
+        <line class="toggle__line" id="toggle__line"></line>
+        <line class="toggle__line" id="toggle__line"></line>
+      </label>
+
+      <div class="overlay" id="navbar">
+        <div class="overlay__header"></div>
+        <div class="overlay__content">
+          <a href="./index.html">Home</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
         </div>
       </div>
-    
+    </header>
+    <div class="container__contact" id="container">
+      <!-- <div class="title">
+          <h1>Contac me</h1>
+        </div> -->
+      <div class="card">
+        <div class="card__header">
+          <p>Contact Me</p>
+        </div>
+        <div class="card__body">
+          <form action="" class="card__body__form">
+            <input type="text" placeholder="Names" class="form__input" />
+            <input type="email" placeholder="Email" class="form__input" />
+            <input type="text" placeholder="Asunt" class="form__input" />
+            <textarea placeholder="Message" class="form__input"></textarea>
+            <input type="submit" value="Enviar mensaje" class="form__btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="scripts.js"></script>
   </body>
 </html>
