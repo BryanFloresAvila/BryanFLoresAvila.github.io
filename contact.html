@@ -38,12 +38,12 @@
           <p>Contact Me</p>
         </div>
         <div class="card__body">
-          <form action="" class="card__body__form">
-            <input type="text" placeholder="Names" class="form__input" />
-            <input type="email" placeholder="Email" class="form__input" />
-            <input type="text" placeholder="Asunt" class="form__input" />
-            <textarea placeholder="Message" class="form__input"></textarea>
-            <input type="submit" value="Enviar mensaje" class="form__btn" />
+          <form action="https://formspree.io/xeqrgjjq"  method="POST" target="_blank"  class="card__body__form">
+            <input type="text" placeholder="Names" required name="names" class="form__input" />
+            <input type="email" placeholder="Email" required name="_replyto" class="form__input" />
+            <input type="text" placeholder="Asunt" required name="asunt" class="form__input" />
+            <textarea placeholder="Message" required name="message" class="form__input"></textarea>
+            <input type="submit"  value="Enviar mensaje" class="form__btn" />
           </form>
         </div>
       </div>

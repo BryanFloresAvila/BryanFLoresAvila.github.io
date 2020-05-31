@@ -38,7 +38,7 @@ window.addEventListener("resize", (e) => {
   /* console.log(e.srcElement.innerHeight);
   console.log(e.srcElement.innerWidth); */
   wrapper.style.height = `${e.srcElement.innerHeight - 167}px`;
-  console.log("aun sigo detectando");
+  /* console.log("aun sigo detectando"); */
 });
 
 /*---------EFECTO DE LA LETRA........*/
