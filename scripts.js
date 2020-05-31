@@ -26,15 +26,18 @@ toggle.addEventListener("click", () => {
   }
 });
 
+/* const alturavp = documento.body.scrollHeight;
+  wrapper.style.height = `${documento.body.scrollHeight - 167}px`; */
+
+
 /*---------CALCULA EL VP ........*/
 const wrapper = document.getElementById("wrapper");
 const alturavp = window.innerHeight;
 wrapper.style.height = `${alturavp - 167}px`;
 window.addEventListener("resize", (e) => {
-  console.log(e.srcElement.innerHeight);
-  console.log(e.srcElement.innerWidth);
-  const container = document.getElementById("wrapper");
-  container.style.height = `${e.srcElement.innerHeight - 167}px`;
+  /* console.log(e.srcElement.innerHeight);
+  console.log(e.srcElement.innerWidth); */
+  wrapper.style.height = `${e.srcElement.innerHeight - 167}px`;
   console.log("aun sigo detectando");
 });
 
